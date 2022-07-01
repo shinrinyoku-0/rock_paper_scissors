@@ -1,0 +1,30 @@
+body {
+    position: relative;
+}
+
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.image {
+    border: 1px solid black;
+
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+.scoreCount {
+    text-align: right;
+    display: inline;
+    position: absolute;
+    right: 50;
+    top: 30;
+    z-index: 100;
+
+}
+
