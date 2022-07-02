@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 body {
     position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    
 }
 
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
 
 .images {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
+    /* justify-content: space-between; */
+    margin-top: 70px;
+    column-gap: 40px;
+    justify-content: center;
 }
 
 .image {
@@ -18,7 +28,7 @@ body {
     cursor: pointer;
 }
 
-.scoreCount {
+.yourScore {
     text-align: right;
     display: inline;
     position: absolute;
@@ -28,3 +38,57 @@ body {
 
 }
 
+.compScore {
+    text-align: right;
+    display: inline;
+    position: absolute;
+    right: 50;
+    top: 50;
+    z-index: 100;
+}
+
+.round {
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    right: 40%;
+}
+
+.result {
+    text-align: center;
+    font-size: 30px;
+}
+
+.txt {
+    font-size: 20px;
+}
+
+.selection {
+    display: inline;
+    
+}
+
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 70px
+    }
+
+    .images {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 50px;
+        margin-bottom: -40px;
+        margin-top: 100px;
+    }
+
+    .images {
+        transform: scale(0.4);
+        margin-top: 20px;
+    }
+}

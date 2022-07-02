@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="start">Start Game</button>
     
     <h1>Take your pick</h1>
 
@@ -15,8 +14,25 @@
         <img src=".\imgs\paper.png" alt="" id="rock" class="image">
         <img src=".\imgs\rock.png" alt="" id="paper" class="image">
         <img src=".\imgs\scissors.png" alt="" id="scissors" class="image">
+        <div class="images selection result">You picked: <span class="yourSelection"></span></div>
+    
+        <div class="images selection result">Computer picked: <span class="compSelection"></span></div>
     </div>
     
+
+    <div class="txt round">Round 
+        <span>1</span>/5
+    </div>
+
+    <div class="txt yourScore">Your Score: 
+        <span class="yourScoreSpan">0</span>
+    </div>
+    <div class="txt compScore">Computer Score: 
+        <span class="compScoreSpan">0</span>
+    </div>
+
+
+
     
     <script src="script.js"></script>
 </body>
